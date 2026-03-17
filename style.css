@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 5px;
+}
+.udemy {
+    display: block;
+    text-decoration: none;
+    color: #2d2f31;
+}
+.course-card-module-container {
+    background-color: #e8edea;
+    padding: 5px;
+    & img {
+        align-self: start;
+        display: block;
+        float: left;
+        margin-right: 20px;
+    }
+    &  h3 {
+        padding: 0;
+        margin: 0;
+    }
+    &  .course-info {
+        padding-right: 20px;
+        color: #5e5e5e;
+    }
+}
+
+.course-list {
+    & li {
+        font-weight: bold;
+    }
+    & span {
+        display: block;
+        font-weight: normal;
+        color: #e5e5e;
+    }
+}
