@@ -1,175 +1,928 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>BROSTUDIO Internet i Reklama</title>
-    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nowakowscy.it | IT Architecture & Cloud Training</title>
+    <meta name="description" content="Master IT Architecture, Cloud Design and Microservices in the AI era. Expert-led training by Marcin Nowakowski.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>nowakowscy.it</h1>
-<h2>Szkolenie</h2>
-<h3>Udemy</h3>
-<a class="udemy" href="https://www.udemy.com/course/it-systems-architecture-microservices">
-<div class="course-card-module-container">
-    <img src="images/udemy-it-architecture-microservices.jpeg" alt="IT Systems Architecture - Microservices">
-    <h3>IT Systems Architecture - Microservices</h3>
-    <p>Become an awesome <strong>IT Architect</strong> specialized in <strong>Microservices Architecture</strong></p>
-    <div>Instructor:</div>
-    <div>Marcin Nowakowski</div>
-    <div class="course-info">
-        <span>3 total hours</span>
-        <span>41 lectures</span>
-        <span>Intermediate</span>
-    </div>
-    <div style="clear:both"></div>
-</div>
-</a>
 
-<h3>Online</h3>
-<h4>IT Architecture Training Program: Embracing New Trends</h4>
-<ol class="course-list">
-    <li>Microservices Architecture
-        <span>Description: Decomposing applications into small, independent services that run as separate processes and communicate through lightweight mechanisms.</span>
-        <span>Further Reading: Microservices on Microsoft Azure</span>
-    </li>
-    <li>Event-Driven Architecture (EDA)
-        <span>Description: A design paradigm that produces, detects, consumes, and reacts to events.</span>
-        <span>Further Reading: Event-Driven Architecture Explained</span>
-    </li>
-    <li>Serverless Architecture
-        <span>Description: Building and running applications without thinking about servers.</span>
-        <span>Further Reading: What is Serverless?</span>
-    </li>
-    <li>Containerization and Kubernetes
-        <span>Description: Using containers to deploy and manage applications, with Kubernetes as the orchestration platform.</span>
-        <span>Further Reading: Kubernetes Basics</span>
-    </li>
-    <li>API-First Design
-        <span>Description: Designing APIs first before implementing the software.</span>
-        <span>Further Reading: API-First Development</span>
-    </li>
-    <li>Hybrid Multi-Cloud Architecture
-        <span>Description: Using multiple cloud services from different providers, along with on-premises resources.</span>
-        <span>Further Reading: Hybrid and Multi-cloud Solutions</span>
-    </li>
-    <li>Edge Computing
-        <span>Description: Processing data closer to the source of data, like IoT devices.</span>
-        <span>Further Reading: What is Edge Computing?</span>
-    </li>
-    <li>Digital Twins
-        <span>Description: Digital replicas of physical entities, used to understand, analyze, and optimize systems.</span>
-        <span>Further Reading: Digital Twins Explained</span>
-    </li>
-    <li>Immutable Infrastructure
-        <span>Description: Infrastructure that never changes after it's deployed.</span>
-        <span>Further Reading: Immutable Infrastructure: Principles</span>
-    </li>
-    <li>AI-Driven Development
-        <span>Description: Integrating AI capabilities in the development process.</span>
-        <span>Further Reading: AI-Driven Development</span>
-    </li>
-    <li>Quantum Computing in Architecture
-        <span>Description: Leveraging the principles of quantum mechanics to process information.</span>
-        <span>Further Reading: Quantum Computing</span>
-    </li>
-    <li>Blockchain in IT Architecture
-        <span>Description: Using blockchain to ensure data integrity and trust.</span>
-        <span>Further Reading: Blockchain Basics</span>
-    </li>
-    <li>DevSecOps Integration
-        <span>Description: Integrating security practices within the DevOps process.</span>
-        <span>Further Reading: What is DevSecOps?</span>
-    </li>
-    <li>Augmented Reality (AR) and Virtual Reality (VR) in Architecture
-        <span>Description: Incorporating AR and VR for simulations, testing, and more.</span>
-        <span>Further Reading: AR and VR in Business</span>
-    </li>
-    <li>Final Project and Assessment
-        <span>Participants will choose a trend from the training program.</span>
-        <span>Develop a project or presentation based on the chosen trend.</span>
-        <span>Assessment and feedback from trainers.</span>
-        <span>This training program aims to equip IT Architects with the knowledge and skills to implement the latest architectural trends in their projects.</span>
-    </li>
-</ol>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">&#9729;</span>
+                <span class="logo-text">nowakowscy<span class="logo-dot">.it</span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#why-arch">Why Architecture</a></li>
+                <li><a href="#arch-paths">Learning Paths</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#contact" class="nav-cta">Get Started</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-<h4>Software Development Training Program: Embracing New Trends</h4>
-<ol class="course-list">
-    <li>Microservices Architecture**
-        <span>- Introduction to microservices</span>
-        <span>- Benefits and challenges</span>
-        <span>- Hands-on: Building a basic microservices application</span>
-    </li>
-    <li>Progressive Web Apps (PWAs)**
-        <span>- Basics of PWAs</span>
-        <span>- Advantages over traditional web apps</span>
-        <span>- Hands-on: Developing a simple PWA</span>
-    </li>
-    <li> Containerization and Docker**
-        <span>- Introduction to containers and Docker</span>
-        <span>- Benefits of containerization</span>
-        <span>- Hands-on: Setting up a Docker environment and deploying an app</span>
-    </li>
-    <li>Serverless Computing**
-        <span>- Basics of serverless architecture</span>
-        <span>- Major providers: AWS Lambda, Azure Functions</span>
-        <span>- Hands-on: Building a serverless application</span>
-    </li>
-    <li>GraphQL**
-        <span>- Introduction to GraphQL vs. REST</span>
-        <span>- Benefits of using GraphQL</span>
-        <span>- Hands-on: Setting up a basic GraphQL server</span>
-    </li>
-    <li>Augmented Reality (AR) in Software Development**
-        <span>- Basics of AR for mobile and web</span>
-        <span>- Tools and platforms for AR development</span>
-        <span>- Hands-on: Creating a basic AR application</span>
-    </li>
-    <li>Edge Computing**
-        <span>- Introduction to edge vs. cloud computing</span>
-        <span>- Benefits of processing data at the edge</span>
-        <span>- Hands-on: Developing an edge computing application</span>
-    </li>
-    <li>AI-Powered Applications**
-        <span>- Integrating AI and ML into software development</span>
-        <span>- Use cases: chatbots, recommendation systems, etc.</span>
-        <span>- Hands-on: Building a basic AI-powered app</span>
-    </li>
-    <li> DevSecOps**
-        <span>- Integrating security into the DevOps process</span>
-        <span>- Importance of security in the SDLC</span>
-        <span>- Hands-on: Implementing security checks in a CI/CD pipeline</span>
-    </li>
-    <li>WebAssembly (Wasm)**
-        <span>- Introduction to WebAssembly</span>
-        <span>- Benefits over JavaScript</span>
-        <span>- Hands-on: Running a Wasm module in a web app</span>
-    </li>
-    <li>Low-Code/No-Code Development**
-        <span>- Basics of low-code/no-code platforms</span>
-        <span>- Benefits and limitations</span>
-        <span>- Hands-on: Building an app using a low-code platform</span>
-    </li>
-    <li> Native Mobile Development with Kotlin and Swift**
-        <span>- Introduction to Kotlin (for Android) and Swift (for iOS)</span>
-        <span>- Benefits over traditional mobile development languages</span>
-        <span>- Hands-on: Developing a basic mobile app using Kotlin or Swift</span>
-    </li>
-    <li>Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions**
-        <span>- Introduction to GitHub Actions</span>
-        <span>- Setting up CI/CD workflows</span>
-        <span>- Hands-on: Automating a software deployment with GitHub Actions</span>
-    </li>
-    <li>Rust Programming Language**
-        <span>- Introduction to Rust and its safety features</span>
-        <span>- Use cases and benefits</span>
-        <span>- Hands-on: Writing a basic program in Rust</span>
-    </li>
-    <li>Final Project and Assessment**
-        <span>- Participants will choose a trend from the training program</span>
-        <span>- Develop a project or presentation based on the chosen trend</span>
-        <span>- Assessment and feedback from trainers</span>
-    </li>
-</ol>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-animation">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Architecture Training for the AI Era
+            </div>
+            <h1 class="hero-title">
+                Think Like an<br>
+                <span class="gradient-text">IT Architect</span><br>
+                Build for the Future
+            </h1>
+            <p class="hero-subtitle">
+                In the age of AI, <strong>architectural thinking</strong> is the most valuable skill an engineer can have.
+                Learn to design resilient cloud systems, lead teams, and make the decisions that matter.
+            </p>
+            <div class="hero-buttons">
+                <a href="#arch-paths" class="btn btn-primary">
+                    <span>Explore Architecture Paths</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="https://www.udemy.com/course/it-systems-architecture-microservices" target="_blank" class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                    Watch on Udemy
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Architecture Modules</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Learning Paths</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">41</span>
+                    <span class="stat-label">Video Lectures</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Hands-On</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <!-- Architecture diagram instead of code -->
+            <div class="arch-diagram">
+                <div class="arch-diagram-title">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="window-title">system-architecture.yml</span>
+                </div>
+                <div class="arch-diagram-body">
+                    <!-- Top layer: Client -->
+                    <div class="arch-layer">
+                        <div class="arch-node client-node">
+                            <span class="arch-node-icon">🌐</span>
+                            <span>Client / API Gateway</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow-down">
+                        <svg width="2" height="28" viewBox="0 0 2 28"><line x1="1" y1="0" x2="1" y2="20" stroke="#6C63FF" stroke-width="2" stroke-dasharray="4 2"/><polygon points="0,20 2,20 1,28" fill="#6C63FF"/></svg>
+                    </div>
+                    <!-- Middle layer: services -->
+                    <div class="arch-layer arch-layer-multi">
+                        <div class="arch-node svc-node">
+                            <span class="arch-node-icon">⚙️</span>
+                            <span>Auth Service</span>
+                        </div>
+                        <div class="arch-node svc-node">
+                            <span class="arch-node-icon">📦</span>
+                            <span>Order Service</span>
+                        </div>
+                        <div class="arch-node svc-node">
+                            <span class="arch-node-icon">🔔</span>
+                            <span>Event Bus</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow-down">
+                        <svg width="2" height="28" viewBox="0 0 2 28"><line x1="1" y1="0" x2="1" y2="20" stroke="#00D9F5" stroke-width="2" stroke-dasharray="4 2"/><polygon points="0,20 2,20 1,28" fill="#00D9F5"/></svg>
+                    </div>
+                    <!-- Infrastructure layer -->
+                    <div class="arch-layer arch-layer-multi">
+                        <div class="arch-node infra-node">
+                            <span class="arch-node-icon">☁️</span>
+                            <span>Cloud / K8s</span>
+                        </div>
+                        <div class="arch-node infra-node">
+                            <span class="arch-node-icon">🗄️</span>
+                            <span>Databases</span>
+                        </div>
+                        <div class="arch-node infra-node">
+                            <span class="arch-node-icon">🤖</span>
+                            <span>AI / ML Layer</span>
+                        </div>
+                    </div>
+                    <div class="arch-diagram-legend">
+                        <span class="legend-item"><span class="legend-dot purple"></span>Microservices</span>
+                        <span class="legend-item"><span class="legend-dot cyan"></span>Event-Driven</span>
+                        <span class="legend-item"><span class="legend-dot green-dot"></span>Cloud-Native</span>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-badges">
+                <div class="badge-float arch1">🏗️ Microservices</div>
+                <div class="badge-float arch2">☁️ Cloud-Native</div>
+                <div class="badge-float arch3">⚡ Event-Driven</div>
+                <div class="badge-float arch4">🔒 DevSecOps</div>
+                <div class="badge-float arch5">🤖 AI Systems</div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== FEATURES BAR ===== -->
+    <section class="features-bar">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🏛️</div>
+                    <div>
+                        <strong>Architecture-First</strong>
+                        <span>Design before you code</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🤖</div>
+                    <div>
+                        <strong>AI-Era Thinking</strong>
+                        <span>Systems that AI can't replace</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">☁️</div>
+                    <div>
+                        <strong>Cloud-Native Patterns</strong>
+                        <span>AWS, Azure, GCP mastery</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📜</div>
+                    <div>
+                        <strong>Certified Architects</strong>
+                        <span>Industry-recognized credentials</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== WHY ARCHITECTURE SECTION ===== -->
+    <section class="section why-arch-section" id="why-arch">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Architecture Matters</span>
+                <h2 class="section-title">In the AI Age, <span class="gradient-text">Architecture is Everything</span></h2>
+                <p class="section-subtitle">AI writes code. Architects decide what to build, how to connect systems, and why it scales.</p>
+            </div>
+
+            <div class="why-arch-grid">
+                <!-- Left: manifesto column -->
+                <div class="why-arch-manifesto">
+                    <div class="manifesto-card">
+                        <div class="manifesto-quote">
+                            "Any sufficiently motivated developer can ask an AI to write code today.
+                            What AI cannot do is <em>understand your business constraints, your scaling
+                            requirements, your security boundaries, or your 5-year technology vision</em>.
+                            That is the Architect's domain."
+                        </div>
+                        <div class="manifesto-author">
+                            <div class="instructor-avatar">MN</div>
+                            <div>
+                                <span class="instructor-name">Marcin Nowakowski</span>
+                                <span class="instructor-label">Enterprise Architect & Instructor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shift-table">
+                        <div class="shift-header">
+                            <div class="shift-col old-col">Before AI</div>
+                            <div class="shift-icon-col">→</div>
+                            <div class="shift-col new-col">In the AI Era</div>
+                        </div>
+                        <div class="shift-row">
+                            <div class="shift-col old-col">Write boilerplate code</div>
+                            <div class="shift-icon-col">🤖</div>
+                            <div class="shift-col new-col">AI generates it in seconds</div>
+                        </div>
+                        <div class="shift-row">
+                            <div class="shift-col old-col">Memorise syntax</div>
+                            <div class="shift-icon-col">🤖</div>
+                            <div class="shift-col new-col">AI autocompletes instantly</div>
+                        </div>
+                        <div class="shift-row highlight-row">
+                            <div class="shift-col old-col">Design systems architecture</div>
+                            <div class="shift-icon-col">👤</div>
+                            <div class="shift-col new-col">Still 100% human expertise</div>
+                        </div>
+                        <div class="shift-row highlight-row">
+                            <div class="shift-col old-col">Evaluate trade-offs</div>
+                            <div class="shift-icon-col">👤</div>
+                            <div class="shift-col new-col">Critical thinking required</div>
+                        </div>
+                        <div class="shift-row highlight-row">
+                            <div class="shift-col old-col">Define cloud strategy</div>
+                            <div class="shift-icon-col">👤</div>
+                            <div class="shift-col new-col">Business + tech leadership</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: 3 pillars -->
+                <div class="why-arch-pillars">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🧭</div>
+                        <h4>Strategic Thinking</h4>
+                        <p>Architects translate business requirements into technical blueprints. They make decisions that affect thousands of users and millions of dollars — decisions no AI can be accountable for.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">⚖️</div>
+                        <h4>Trade-off Mastery</h4>
+                        <p>Every architectural choice is a trade-off: scalability vs. consistency, cost vs. performance, simplicity vs. flexibility. Mastering these trade-offs is the heart of great architecture.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🔭</div>
+                        <h4>Future-Proof Design</h4>
+                        <p>Well-architected systems last decades. Learn to design for changeability — systems that can absorb new requirements, swap components, and scale with AI-driven workloads.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🤝</div>
+                        <h4>Cross-Team Leadership</h4>
+                        <p>Architects connect engineering, product, security, and business. The ability to communicate architecture clearly — in diagrams, ADRs, and conversations — is your superpower.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ARCHITECTURE LEARNING PATHS ===== -->
+    <section class="section arch-paths-section" id="arch-paths">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Architecture Learning Paths</span>
+                <h2 class="section-title">Choose Your <span class="gradient-text">Architect Role</span></h2>
+                <p class="section-subtitle">Four specialised paths for modern IT professionals — all grounded in cloud, distributed systems, and AI-ready thinking</p>
+            </div>
+
+            <div class="paths-grid">
+                <!-- Path 1: Cloud Architect -->
+                <div class="path-card path-primary">
+                    <div class="path-card-header">
+                        <div class="path-icon">☁️</div>
+                        <div class="path-level">
+                            <span class="path-level-badge">Core Path</span>
+                        </div>
+                    </div>
+                    <h3>Cloud Architect</h3>
+                    <p>Design and govern cloud infrastructure across AWS, Azure, and GCP. Master multi-cloud strategies, cost optimisation, and well-architected frameworks.</p>
+                    <ul class="path-topics">
+                        <li>Multi-cloud & Hybrid Architecture</li>
+                        <li>Well-Architected Framework</li>
+                        <li>FinOps & Cloud Cost Governance</li>
+                        <li>Landing Zones & IaC with Terraform</li>
+                        <li>Cloud Security Posture Management</li>
+                    </ul>
+                    <div class="path-langs">
+                        <span>AWS</span><span>Azure</span><span>GCP</span><span>Terraform</span>
+                    </div>
+                    <a href="#curriculum" class="btn btn-primary btn-small">View Curriculum →</a>
+                </div>
+
+                <!-- Path 2: Solutions Architect -->
+                <div class="path-card">
+                    <div class="path-card-header">
+                        <div class="path-icon">🏗️</div>
+                        <div class="path-level">
+                            <span class="path-level-badge advanced-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <h3>Solutions Architect</h3>
+                    <p>Translate complex business needs into robust technical architectures. Specialise in microservices, event-driven systems, API design, and distributed patterns.</p>
+                    <ul class="path-topics">
+                        <li>Microservices & DDD</li>
+                        <li>Event-Driven Architecture & Kafka</li>
+                        <li>API-First & GraphQL Design</li>
+                        <li>CQRS & Event Sourcing</li>
+                        <li>Architecture Decision Records (ADR)</li>
+                    </ul>
+                    <div class="path-langs">
+                        <span>Microservices</span><span>Kafka</span><span>gRPC</span>
+                    </div>
+                    <a href="#curriculum" class="btn btn-secondary btn-small">View Curriculum →</a>
+                </div>
+
+                <!-- Path 3: Platform / DevOps Engineer -->
+                <div class="path-card">
+                    <div class="path-card-header">
+                        <div class="path-icon">⚙️</div>
+                        <div class="path-level">
+                            <span class="path-level-badge">Intermediate</span>
+                        </div>
+                    </div>
+                    <h3>Platform Engineer</h3>
+                    <p>Build the internal platforms and developer toolchains that teams rely on. Master Kubernetes, GitOps, observability stacks, and DevSecOps pipelines.</p>
+                    <ul class="path-topics">
+                        <li>Kubernetes & Helm at Scale</li>
+                        <li>GitOps with ArgoCD / Flux</li>
+                        <li>Observability: OTel, Prometheus, Grafana</li>
+                        <li>CI/CD Pipeline Architecture</li>
+                        <li>Immutable Infrastructure & Packer</li>
+                    </ul>
+                    <div class="path-langs">
+                        <span>K8s</span><span>Helm</span><span>ArgoCD</span><span>Golang</span>
+                    </div>
+                    <a href="#curriculum" class="btn btn-secondary btn-small">View Curriculum →</a>
+                </div>
+
+                <!-- Path 4: AI Systems Architect -->
+                <div class="path-card path-hot">
+                    <div class="path-card-header">
+                        <div class="path-icon">🤖</div>
+                        <div class="path-level">
+                            <span class="path-level-badge hot-badge">🔥 Most In-Demand</span>
+                        </div>
+                    </div>
+                    <h3>AI Systems Architect</h3>
+                    <p>Design the architectural foundations for AI-powered products. Integrate LLMs, vector databases, and ML pipelines into production-grade, reliable systems.</p>
+                    <ul class="path-topics">
+                        <li>LLM Integration Architecture</li>
+                        <li>RAG Systems & Vector Databases</li>
+                        <li>MLOps & Model Lifecycle Design</li>
+                        <li>AI-Driven Development Patterns</li>
+                        <li>Responsible AI & Governance</li>
+                    </ul>
+                    <div class="path-langs">
+                        <span>LLMs</span><span>Python</span><span>MLOps</span><span>Vector DB</span>
+                    </div>
+                    <a href="#curriculum" class="btn btn-secondary btn-small">View Curriculum →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED UDEMY COURSE ===== -->
+    <section class="section udemy-section" id="udemy-course">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Flagship Course</span>
+                <h2 class="section-title">Start Here: <span class="gradient-text">Microservices Architecture</span></h2>
+                <p class="section-subtitle">The most complete hands-on architecture course to launch your career as an IT Architect</p>
+            </div>
+
+            <div class="featured-course">
+                <div class="featured-badge">⭐ Featured on Udemy</div>
+                <a class="featured-course-link" href="https://www.udemy.com/course/it-systems-architecture-microservices" target="_blank">
+                    <div class="featured-course-inner">
+                        <div class="featured-course-image">
+                            <img src="images/udemy-it-architecture-microservices.jpeg" alt="IT Systems Architecture - Microservices">
+                            <div class="play-overlay">
+                                <div class="play-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-course-info">
+                            <div class="course-platform">
+                                <span class="platform-badge udemy-badge">UDEMY</span>
+                            </div>
+                            <h3>IT Systems Architecture — Microservices</h3>
+                            <p>Become an awesome <strong>IT Architect</strong> specialised in <strong>Microservices Architecture</strong>. Master the patterns, trade-offs, and practices used by top-tier engineering teams worldwide. Go beyond code — think in systems.</p>
+                            <div class="course-meta">
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                    3 total hours
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                    41 lectures
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                                    Intermediate
+                                </div>
+                            </div>
+                            <div class="instructor">
+                                <div class="instructor-avatar">MN</div>
+                                <div>
+                                    <span class="instructor-label">Instructor</span>
+                                    <span class="instructor-name">Marcin Nowakowski</span>
+                                </div>
+                            </div>
+                            <div class="course-highlights">
+                                <div class="highlight-item"><span class="check">✓</span> Microservices patterns & anti-patterns</div>
+                                <div class="highlight-item"><span class="check">✓</span> Service communication: REST, gRPC, messaging</div>
+                                <div class="highlight-item"><span class="check">✓</span> Deployment on Kubernetes</div>
+                                <div class="highlight-item"><span class="check">✓</span> Hands-on architecture workshops</div>
+                            </div>
+                            <div class="cta-row">
+                                <span class="btn btn-primary btn-small">View on Udemy →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IT ARCHITECTURE CURRICULUM (PRIMARY — full, no tabs) ===== -->
+    <section class="section curriculum-section" id="curriculum">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Full IT Architecture Curriculum</span>
+                <h2 class="section-title">15 Modules to <span class="gradient-text">Think Like an Architect</span></h2>
+                <p class="section-subtitle">A complete, structured programme covering every major architectural trend shaping enterprise systems today</p>
+            </div>
+
+            <div class="curriculum-intro">
+                <h3>IT Architecture Training Program: Embracing New Trends</h3>
+                <p>Equip yourself with the knowledge and skills to implement the latest architectural trends in enterprise projects.</p>
+            </div>
+
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-num">01</div>
+                    <div class="module-content">
+                        <h4>Microservices Architecture</h4>
+                        <p>Decomposing applications into small, independent services that communicate through lightweight mechanisms. Patterns, anti-patterns, and real-world trade-offs.</p>
+                        <span class="module-tag">Core</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">02</div>
+                    <div class="module-content">
+                        <h4>Event-Driven Architecture (EDA)</h4>
+                        <p>A design paradigm that produces, detects, consumes, and reacts to events. Master Kafka, RabbitMQ, and event sourcing patterns.</p>
+                        <span class="module-tag">Architecture</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">03</div>
+                    <div class="module-content">
+                        <h4>Serverless Architecture</h4>
+                        <p>Building and running applications without thinking about servers. AWS Lambda, Azure Functions, GCP Cloud Run — when to use and when to avoid.</p>
+                        <span class="module-tag">Cloud</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">04</div>
+                    <div class="module-content">
+                        <h4>Containerisation & Kubernetes</h4>
+                        <p>Using containers to deploy and manage applications, with Kubernetes as the orchestration platform for production workloads at scale.</p>
+                        <span class="module-tag">DevOps</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">05</div>
+                    <div class="module-content">
+                        <h4>API-First Design</h4>
+                        <p>Designing APIs before implementing the software. OpenAPI specification, API gateways, versioning strategies, and developer experience.</p>
+                        <span class="module-tag">Design</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">06</div>
+                    <div class="module-content">
+                        <h4>Hybrid Multi-Cloud Architecture</h4>
+                        <p>Using multiple cloud services from different providers, along with on-premises resources. Governance, cost control, and vendor lock-in avoidance.</p>
+                        <span class="module-tag">Cloud</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">07</div>
+                    <div class="module-content">
+                        <h4>Edge Computing</h4>
+                        <p>Processing data closer to the source. IoT architectures, CDN-edge computing, latency-sensitive workloads, and edge-cloud continuum design.</p>
+                        <span class="module-tag">Advanced</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">08</div>
+                    <div class="module-content">
+                        <h4>Digital Twins</h4>
+                        <p>Digital replicas of physical entities used to understand, analyse, and optimise complex systems. Industrial IoT and simulation architectures.</p>
+                        <span class="module-tag">Innovation</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">09</div>
+                    <div class="module-content">
+                        <h4>Immutable Infrastructure</h4>
+                        <p>Infrastructure that never changes after deployment. Terraform, Packer, GitOps practices, and the philosophy of treating servers as cattle, not pets.</p>
+                        <span class="module-tag">DevOps</span>
+                    </div>
+                </div>
+                <div class="module-card module-card-hot">
+                    <div class="module-num">10</div>
+                    <div class="module-content">
+                        <h4>AI-Driven Development</h4>
+                        <p>Integrating AI into the development process and the architecture itself. LLM pipelines, vector search, RAG patterns, and AI-native system design.</p>
+                        <span class="module-tag">AI/ML</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">11</div>
+                    <div class="module-content">
+                        <h4>Quantum Computing in Architecture</h4>
+                        <p>Leveraging quantum mechanics principles for complex optimisation problems. Where quantum fits in the enterprise roadmap today and tomorrow.</p>
+                        <span class="module-tag">Emerging</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">12</div>
+                    <div class="module-content">
+                        <h4>Blockchain in IT Architecture</h4>
+                        <p>Using blockchain to ensure data integrity and trust in distributed systems. Practical use cases beyond cryptocurrency: supply chain, identity, contracts.</p>
+                        <span class="module-tag">Web3</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">13</div>
+                    <div class="module-content">
+                        <h4>DevSecOps Integration</h4>
+                        <p>Integrating security practices within the DevOps process. Shift-left security, vulnerability scanning, SBOM, and compliance automation pipelines.</p>
+                        <span class="module-tag">Security</span>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-num">14</div>
+                    <div class="module-content">
+                        <h4>AR / VR in Architecture</h4>
+                        <p>Incorporating Augmented and Virtual Reality for system simulations, immersive architecture reviews, and spatial computing application design.</p>
+                        <span class="module-tag">Innovation</span>
+                    </div>
+                </div>
+                <div class="module-card highlight-card">
+                    <div class="module-num">15</div>
+                    <div class="module-content">
+                        <h4>Final Project & Assessment</h4>
+                        <p>Design a full system architecture for a real-world scenario. Present your decisions, trade-offs, and future evolution roadmap to expert trainers.</p>
+                        <span class="module-tag capstone">Capstone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROGRAMMING LANGUAGES — "Tools of the Architect" ===== -->
+    <section class="section languages-section" id="languages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Implementation Skills</span>
+                <h2 class="section-title">The <span class="gradient-text">Architect's Toolkit</span></h2>
+                <p class="section-subtitle">Great architects speak every language fluently. Understand how Java, Python, and Go express architectural patterns in real production systems.</p>
+            </div>
+
+            <!-- Context banner -->
+            <div class="lang-context-banner">
+                <span class="lang-context-icon">💡</span>
+                <p>In the AI era, understanding <em>when and why</em> to use each language is more valuable than memorising syntax. Our language training is always framed through the lens of architectural decision-making.</p>
+            </div>
+
+            <div class="lang-tabs">
+                <button class="lang-tab active" data-lang="java">☕ Java</button>
+                <button class="lang-tab" data-lang="python">🐍 Python</button>
+                <button class="lang-tab" data-lang="golang">🔵 Golang</button>
+            </div>
+
+            <div class="lang-content">
+                <!-- Java -->
+                <div class="lang-panel active" id="lang-java">
+                    <div class="lang-panel-inner">
+                        <div class="lang-info">
+                            <div class="lang-logo java-logo">☕</div>
+                            <h3>Java — Enterprise Architecture</h3>
+                            <p>Java remains the backbone of enterprise distributed systems. Understanding its ecosystem — Spring Boot, reactive patterns, and JVM internals — is essential for any architect designing at scale.</p>
+                            <div class="arch-use-case">
+                                <strong>🏗️ Architectural Role:</strong> Best for large, long-lived enterprise services, strong typing, and teams that need rich frameworks for microservices orchestration and transactional systems.
+                            </div>
+                            <ul class="lang-topics">
+                                <li><span class="check">✓</span> Spring Boot & Spring Cloud</li>
+                                <li><span class="check">✓</span> Reactive Programming (Webflux)</li>
+                                <li><span class="check">✓</span> RESTful & gRPC API Design</li>
+                                <li><span class="check">✓</span> JPA / Hibernate & Databases</li>
+                                <li><span class="check">✓</span> Microservices with Java</li>
+                                <li><span class="check">✓</span> Testing Architecture (JUnit, Testcontainers)</li>
+                                <li><span class="check">✓</span> CI/CD with GitHub Actions</li>
+                                <li><span class="check">✓</span> Cloud Deployment (AWS/GCP)</li>
+                            </ul>
+                        </div>
+                        <div class="lang-code-demo">
+                            <div class="code-window small">
+                                <div class="window-header">
+                                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                    <span class="window-title">MicroserviceApp.java</span>
+                                </div>
+                                <div class="code-content">
+                                    <div class="code-line"><span class="kw">@SpringBootApplication</span></div>
+                                    <div class="code-line"><span class="kw">@EnableEurekaClient</span></div>
+                                    <div class="code-line"><span class="kw">public class</span> <span class="fn">MicroserviceApp</span> {</div>
+                                    <div class="code-line indent"><span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {</div>
+                                    <div class="code-line indent2">SpringApplication.<span class="fn">run</span>(</div>
+                                    <div class="code-line indent2">  MicroserviceApp.<span class="kw">class</span>, args);</div>
+                                    <div class="code-line indent">}</div>
+                                    <div class="code-line">}</div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"><span class="kw">@RestController</span></div>
+                                    <div class="code-line"><span class="kw">@RequestMapping</span>(<span class="str">"/api/cloud"</span>)</div>
+                                    <div class="code-line"><span class="kw">public class</span> <span class="fn">CloudController</span> {</div>
+                                    <div class="code-line indent"><span class="kw">@GetMapping</span>(<span class="str">"/status"</span>)</div>
+                                    <div class="code-line indent"><span class="kw">public</span> String <span class="fn">status</span>() {</div>
+                                    <div class="code-line indent2"><span class="kw">return</span> <span class="str">"Running in the cloud! ☁️"</span>;</div>
+                                    <div class="code-line indent">}</div>
+                                    <div class="code-line">}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="lang-panel" id="lang-python">
+                    <div class="lang-panel-inner">
+                        <div class="lang-info">
+                            <div class="lang-logo python-logo">🐍</div>
+                            <h3>Python — AI & Cloud Automation</h3>
+                            <p>Python is the language of AI, data engineering, and cloud automation. Architects who understand Python can design and evaluate AI pipelines, serverless functions, and data platform architectures.</p>
+                            <div class="arch-use-case">
+                                <strong>🏗️ Architectural Role:</strong> Go-to for AI/ML systems, data pipelines, cloud automation scripts, serverless functions, and rapid prototyping of architectural concepts.
+                            </div>
+                            <ul class="lang-topics">
+                                <li><span class="check">✓</span> FastAPI & Django REST Framework</li>
+                                <li><span class="check">✓</span> Async Programming & Concurrency</li>
+                                <li><span class="check">✓</span> Cloud Automation (boto3, SDKs)</li>
+                                <li><span class="check">✓</span> AI/ML Pipeline Integration</li>
+                                <li><span class="check">✓</span> LangChain & LLM Orchestration</li>
+                                <li><span class="check">✓</span> Serverless Functions (AWS Lambda)</li>
+                                <li><span class="check">✓</span> Data Engineering with Pandas</li>
+                                <li><span class="check">✓</span> Docker & Kubernetes with Python</li>
+                            </ul>
+                        </div>
+                        <div class="lang-code-demo">
+                            <div class="code-window small">
+                                <div class="window-header">
+                                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                    <span class="window-title">ai_service.py</span>
+                                </div>
+                                <div class="code-content">
+                                    <div class="code-line"><span class="kw">from</span> fastapi <span class="kw">import</span> FastAPI</div>
+                                    <div class="code-line"><span class="kw">from</span> langchain <span class="kw">import</span> LLMChain</div>
+                                    <div class="code-line"><span class="kw">import</span> boto3</div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line">app = <span class="fn">FastAPI</span>(title=<span class="str">"AI Architecture API"</span>)</div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"><span class="kw">@app.post</span>(<span class="str">"/arch/review"</span>)</div>
+                                    <div class="code-line"><span class="kw">async def</span> <span class="fn">review_design</span>(diagram: str):</div>
+                                    <div class="code-line indent">chain = <span class="fn">LLMChain</span>(llm=arch_model)</div>
+                                    <div class="code-line indent">feedback = <span class="kw">await</span> chain.<span class="fn">arun</span>(diagram)</div>
+                                    <div class="code-line indent"><span class="kw">return</span> {</div>
+                                    <div class="code-line indent2"><span class="str">"analysis"</span>: feedback,</div>
+                                    <div class="code-line indent2"><span class="str">"ai_assisted"</span>: <span class="kw">True</span></div>
+                                    <div class="code-line indent">}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Golang -->
+                <div class="lang-panel" id="lang-golang">
+                    <div class="lang-panel-inner">
+                        <div class="lang-info">
+                            <div class="lang-logo golang-logo">🔵</div>
+                            <h3>Golang — Cloud-Native Systems</h3>
+                            <p>Go was purpose-built for the cloud era. Its performance, simplicity, and native concurrency model make it the language of Kubernetes, Docker, and high-throughput cloud-native microservices.</p>
+                            <div class="arch-use-case">
+                                <strong>🏗️ Architectural Role:</strong> Ideal for platform engineering, high-performance microservices, CLI tooling, Kubernetes operators, and any system where latency and throughput are critical.
+                            </div>
+                            <ul class="lang-topics">
+                                <li><span class="check">✓</span> Goroutines & Concurrency Patterns</li>
+                                <li><span class="check">✓</span> Building REST & gRPC Services</li>
+                                <li><span class="check">✓</span> Cloud-Native Development</li>
+                                <li><span class="check">✓</span> Writing Kubernetes Operators</li>
+                                <li><span class="check">✓</span> Event-Driven with NATS/Kafka</li>
+                                <li><span class="check">✓</span> Database & ORM (GORM)</li>
+                                <li><span class="check">✓</span> Performance Testing & Benchmarking</li>
+                                <li><span class="check">✓</span> Deploying Go Apps to Cloud</li>
+                            </ul>
+                        </div>
+                        <div class="lang-code-demo">
+                            <div class="code-window small">
+                                <div class="window-header">
+                                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                    <span class="window-title">arch_service.go</span>
+                                </div>
+                                <div class="code-content">
+                                    <div class="code-line"><span class="kw">package</span> main</div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"><span class="kw">import</span> (</div>
+                                    <div class="code-line indent"><span class="str">"fmt"</span></div>
+                                    <div class="code-line indent"><span class="str">"net/http"</span></div>
+                                    <div class="code-line indent"><span class="str">"sync"</span></div>
+                                    <div class="code-line">)</div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"><span class="cm">// Architect's pattern: fan-out worker pool</span></div>
+                                    <div class="code-line"><span class="kw">func</span> <span class="fn">deployServices</span>(services []string) {</div>
+                                    <div class="code-line indent"><span class="kw">var</span> wg sync.WaitGroup</div>
+                                    <div class="code-line indent"><span class="kw">for</span> _, svc := <span class="kw">range</span> services {</div>
+                                    <div class="code-line indent2">wg.<span class="fn">Add</span>(1)</div>
+                                    <div class="code-line indent2"><span class="kw">go func</span>(name string) {</div>
+                                    <div class="code-line indent2">  <span class="kw">defer</span> wg.<span class="fn">Done</span>()</div>
+                                    <div class="code-line indent2">  <span class="fn">deploy</span>(name) <span class="cm">// concurrent deploy</span></div>
+                                    <div class="code-line indent2">}(svc)</div>
+                                    <div class="code-line indent">}</div>
+                                    <div class="code-line indent">wg.<span class="fn">Wait</span>()</div>
+                                    <div class="code-line">}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary curriculum: Software Development -->
+            <div class="secondary-curriculum">
+                <div class="secondary-curriculum-header">
+                    <h3>Software Development Curriculum</h3>
+                    <p>Complement your architecture skills with hands-on development training across 15 modules covering modern software engineering trends.</p>
+                    <button class="toggle-curriculum-btn" id="toggle-sw-curriculum">
+                        Show Development Curriculum
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                </div>
+                <div class="sw-curriculum-content" id="sw-curriculum-content" style="display:none;">
+                    <div class="modules-grid sw-modules">
+                        <div class="module-card"><div class="module-num">01</div><div class="module-content"><h4>Microservices Architecture</h4><p>Introduction, benefits, challenges, and hands-on: building a basic microservices application from scratch.</p><span class="module-tag">Core</span></div></div>
+                        <div class="module-card"><div class="module-num">02</div><div class="module-content"><h4>Progressive Web Apps (PWAs)</h4><p>Basics of PWAs, advantages over traditional web apps, hands-on: Developing a simple PWA with offline capabilities.</p><span class="module-tag">Frontend</span></div></div>
+                        <div class="module-card"><div class="module-num">03</div><div class="module-content"><h4>Containerisation & Docker</h4><p>Introduction to containers and Docker, benefits, hands-on: Setting up a Docker environment and deploying an app.</p><span class="module-tag">DevOps</span></div></div>
+                        <div class="module-card"><div class="module-num">04</div><div class="module-content"><h4>Serverless Computing</h4><p>Basics of serverless, major providers: AWS Lambda, Azure Functions, hands-on: Building a serverless application.</p><span class="module-tag">Cloud</span></div></div>
+                        <div class="module-card"><div class="module-num">05</div><div class="module-content"><h4>GraphQL</h4><p>Introduction to GraphQL vs. REST, benefits and trade-offs, hands-on: Setting up a basic GraphQL server with resolvers.</p><span class="module-tag">API</span></div></div>
+                        <div class="module-card"><div class="module-num">06</div><div class="module-content"><h4>AR in Software Development</h4><p>Basics of AR for mobile and web, tools and platforms, hands-on: Creating a basic AR application.</p><span class="module-tag">Innovation</span></div></div>
+                        <div class="module-card"><div class="module-num">07</div><div class="module-content"><h4>Edge Computing</h4><p>Edge vs. cloud computing, benefits of processing data at the edge, hands-on: Developing an edge computing application.</p><span class="module-tag">Advanced</span></div></div>
+                        <div class="module-card"><div class="module-num">08</div><div class="module-content"><h4>AI-Powered Applications</h4><p>Integrating AI and ML into software, use cases: chatbots, recommendations, hands-on: Building a basic AI-powered app.</p><span class="module-tag">AI/ML</span></div></div>
+                        <div class="module-card"><div class="module-num">09</div><div class="module-content"><h4>DevSecOps</h4><p>Integrating security into DevOps, importance in the SDLC, hands-on: Implementing security checks in a CI/CD pipeline.</p><span class="module-tag">Security</span></div></div>
+                        <div class="module-card"><div class="module-num">10</div><div class="module-content"><h4>WebAssembly (Wasm)</h4><p>Introduction to WebAssembly, benefits over JavaScript, hands-on: Running a Wasm module in a web application.</p><span class="module-tag">Web</span></div></div>
+                        <div class="module-card"><div class="module-num">11</div><div class="module-content"><h4>Low-Code / No-Code Development</h4><p>Basics of low-code/no-code platforms, benefits and limitations, hands-on: Building an app using a low-code platform.</p><span class="module-tag">Productivity</span></div></div>
+                        <div class="module-card"><div class="module-num">12</div><div class="module-content"><h4>Native Mobile: Kotlin & Swift</h4><p>Kotlin (Android) and Swift (iOS), benefits over traditional mobile development, hands-on: A basic mobile app.</p><span class="module-tag">Mobile</span></div></div>
+                        <div class="module-card"><div class="module-num">13</div><div class="module-content"><h4>CI/CD with GitHub Actions</h4><p>Introduction to GitHub Actions, setting up CI/CD workflows, hands-on: Automating a software deployment pipeline.</p><span class="module-tag">DevOps</span></div></div>
+                        <div class="module-card"><div class="module-num">14</div><div class="module-content"><h4>Rust Programming Language</h4><p>Introduction to Rust and its safety features, use cases and benefits, hands-on: Writing a basic program in Rust.</p><span class="module-tag">Systems</span></div></div>
+                        <div class="module-card highlight-card"><div class="module-num">15</div><div class="module-content"><h4>Final Project & Assessment</h4><p>Choose a trend, develop a project or presentation, receive assessment and feedback from expert trainers.</p><span class="module-tag capstone">Capstone</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / CTA SECTION ===== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Begin Your Architecture Journey</span>
+                    <h2>Ready to Think Like an <span class="gradient-text">IT Architect</span>?</h2>
+                    <p>Join professionals who have transformed their careers by shifting from writing code to designing systems. Architectural thinking is the highest-leverage skill in the AI era.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">🏗️</div>
+                            <div>
+                                <strong>Architecture Training</strong>
+                                <span>Self-paced online & live instructor-led sessions</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🌐</div>
+                            <div>
+                                <strong>Udemy Flagship Course</strong>
+                                <span><a href="https://www.udemy.com/course/it-systems-architecture-microservices" target="_blank">IT Systems Architecture – Microservices</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">👨‍💻</div>
+                            <div>
+                                <strong>Lead Instructor</strong>
+                                <span>Marcin Nowakowski — Enterprise Architect & Trainer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-card">
+                        <h3>Request Information</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Architecture Path of Interest</label>
+                                <select id="interest">
+                                    <option value="">Select a path...</option>
+                                    <option>Cloud Architect</option>
+                                    <option>Solutions Architect</option>
+                                    <option>Platform / DevOps Engineer</option>
+                                    <option>AI Systems Architect</option>
+                                    <option>Java Development</option>
+                                    <option>Python Programming</option>
+                                    <option>Golang Mastery</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Architecture Goals</label>
+                                <textarea id="message" rows="3" placeholder="Tell us about your current role and what you want to design..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                Start My Journey
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                        <div class="form-success" id="form-success" style="display:none;">
+                            <div class="success-icon">✅</div>
+                            <h4>Message Sent!</h4>
+                            <p>Thank you! We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <span class="logo-icon">&#9729;</span>
+                        <span class="logo-text">nowakowscy<span class="logo-dot">.it</span></span>
+                    </div>
+                    <p>Architecture-first IT training for the AI era. Empowering engineers to design the systems that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Architecture</h5>
+                    <ul>
+                        <li><a href="#arch-paths">Cloud Architect</a></li>
+                        <li><a href="#arch-paths">Solutions Architect</a></li>
+                        <li><a href="#arch-paths">Platform Engineer</a></li>
+                        <li><a href="#arch-paths">AI Systems Architect</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>Languages</h5>
+                    <ul>
+                        <li><a href="#languages">☕ Java / Spring Boot</a></li>
+                        <li><a href="#languages">🐍 Python / FastAPI</a></li>
+                        <li><a href="#languages">🔵 Golang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#curriculum">Full Curriculum</a></li>
+                        <li><a href="#why-arch">Why Architecture?</a></li>
+                        <li><a href="https://www.udemy.com/course/it-systems-architecture-microservices" target="_blank">Udemy Course</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 nowakowscy.it — All rights reserved. Architecture-first training for the AI age.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="app.js"></script>
 </body>
+</html>
